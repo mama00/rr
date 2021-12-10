@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Splash from "./page/Splash/Splash";
+import SignUp from "./page/SignUp/SignUp";
+import "./index.css";
+import { initializeApp } from "firebase/app";
+import "./firebase/index";
+import Home from "./page/Home/Home";
+
+// Set the configuration for your app
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ height: "100vh", width: "100%" }}>
+      <Home />
     </div>
   );
 }
